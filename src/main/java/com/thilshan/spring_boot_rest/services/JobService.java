@@ -12,10 +12,10 @@ public class JobService {
     @Autowired
     private JobRepository jobRepository;
 
-//    public void addJob(JobPost jobPost){
-//        jobRepository.addJob(jobPost);
-//
-//    }
+    public void addJob(JobPost jobPost){
+        jobRepository.addJob(jobPost);
+
+    }
 
     //method to return all JobPosts
     public List<JobPost> getAllJobs() {
@@ -27,4 +27,5 @@ public class JobService {
     public JobPost getJob(int postId) {
         return jobRepository.getJob(postId);
     }
+
 }
