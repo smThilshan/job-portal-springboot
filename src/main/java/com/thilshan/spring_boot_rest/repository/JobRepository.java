@@ -12,6 +12,7 @@ import java.util.List;
 @Repository
 public interface JobRepository extends JpaRepository<JobPost, Integer> {
 
+    List<JobPost> findByPostProfileContaining(String postProfile);
 
 }
 
